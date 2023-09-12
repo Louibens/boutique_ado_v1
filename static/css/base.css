@@ -40,7 +40,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important;
+    color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -48,7 +48,7 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
-    color: white;
+    color: white !important;
 }
 
 .shop-now-button:hover,
@@ -74,18 +74,18 @@ body {
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-color: white;
-    z-index: -1
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
-    color: #fff !important
+    color: #fff !important;
 }
 
 .btt-button {
@@ -93,20 +93,26 @@ a.category-badge > span.badge:hover {
     width: 42px;
     position: fixed;
     bottom: 10px;
-    right: 10px
+    right: 10px;
 }
 
 .btt-link,
 .update-link,
 .remove-item {
-    cursor: pointer
+    cursor: pointer;
 }
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+/* ------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 999999;
+    z-index: 99999999999;
 }
 
 .custom-toast {
@@ -114,7 +120,7 @@ a.category-badge > span.badge:hover {
 }
 
 .toast-capper {
-    height: 2px
+    height: 2px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -231,7 +237,6 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -254,6 +259,6 @@ a.category-badge > span.badge:hover {
     }
 
     body {
-        height: calc(100vh - 116px)
+        height: calc(100vh - 116px);
     }
 }
