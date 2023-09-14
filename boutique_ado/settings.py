@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-1u^g$$mjh8hrvo)@$ivub5)syw00bxfo^nk98$(d=gb8*^p9hv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-louibens-boutiqueadov1-qo3v68vxzbj.ws-eu104.gitpod.io', 'boutiqueadolb.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-louibens-boutiqueadov1-qo3v68vxzbj.ws-eu104.gitpod.io', 'boutiqueadolb-70d3cc305ee6.herokuapp.com', 'localhost']
 
 
 # Application definition
